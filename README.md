@@ -1,13 +1,4 @@
-# JCD Portfolio
-The Jekyll-based portfolio for jakecooperdesign.com
+# Two Hands Jewelry Design
 
-## Projects to Include
+## Todo
 - [ ] 
-- [ ] Time Warner Blog
-- [x] Logofolio
-- [ ] Benchworks
-- [ ] TW Supplier Diversity
-- [ ] TW Annual Reports
-- [ ] MyTW
-- [ ] Mustachio
-- [ ] CCA Posters
