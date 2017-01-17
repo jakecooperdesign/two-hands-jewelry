@@ -1,4 +1,4 @@
 # Two Hands Jewelry Design
 
-## Todo
+## Todos
 - [ ] 
