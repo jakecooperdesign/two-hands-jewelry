@@ -1,0 +1,18 @@
+<section class="projects container">
+	<div class="columns is-wrapped">
+		{% for i in (1..12) %}
+			<article class="project column is-6">
+				<div class="is-relative">
+					<img class="is-block is-marginless" src="/assets/imgs/placeholder-600.jpg" alt="Project Image">
+					<header class="has-text-centered has-anim-reveal is-overlay has-flex-centered-contents has-bg-light-transparent is-anim-trigger">
+						<div class="has-anim-slide-down-triggered has-padding-small">
+							<p class="has-margin-bottom-small"><span class="label">Earrings</span></p>
+							<h3 class=""><a href="#" class="link">Blue Opal & Silver Earrings</a></h3>
+							<p class="has-margin-top-small is-marginless-bottom"><a href="#" class="btn-hover small-caps">View the Project <i class="fa fa-chevron-right"></i></a></p>
+						</div>
+					</header>
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</section>

@@ -1,0 +1,54 @@
+---
+layout: default
+has_slick: true
+has_jquery: true
+---
+
+<article class="product container has-margin-bottom">
+	<div class="columns">
+		<div class="column is-8">
+			<section class="gallery">
+				<div class="slider-featured">
+					{% for i in (1..2) %}
+						{% for image in page.gallery %}
+							<img class="is-marginless" src="{{image.src}}" alt="{{page.title}}">
+						{% endfor %}
+					{% endfor %}
+				</div>
+				<div class="slider-thumbnails has-margin-top-small">
+					{% for i in (1..2) %}
+						{% for image in page.gallery %}
+							<img class="no-focus has-pointers is-marginless" src="{{image.src}}" alt="{{page.title}}">
+						{% endfor %}
+					{% endfor %}
+				</div>
+			</section>
+		</div>
+		<div class="column is-4">
+			<section class="product-details has-padding-left-small has-padding-top-small">
+				<p class="label is-marginless">{{page.category}}</p>
+				<h1 class="is-h2 has-notch-below">{{page.title}}</h1>
+				<div class="has-margin-vert-small">
+					{{ content }}
+				</div>
+				{% if page.specs.size > 0 %}
+				<div class="specs has-text-light">
+					<ul class="is-unstyled">
+						{% for spec in page.specs %}
+						<li><span class="small-caps">{{spec.key}}:</span>&ensp;{{spec.value}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				{% endif %}
+				<p class="has-margin-top-small"><a href="{{page.store_url}}" class="btn btn-default">Purchase at Our Store&ensp;<i class="fa fa-arrow-right"></i></a></p>
+				<nav class="nav social-share has-margin-top has-padding-top-xs has-border-top">
+					<p class="label is-marginless">share:&ensp;</p>
+					<a class="btn btn-hover is-small circle" href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
+					<a class="btn btn-hover is-small circle" href="#"><i class="fa fa-fw fa-pinterest"></i></a></li>
+					<a class="btn btn-hover is-small circle" href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
+					<a class="btn btn-hover is-small circle" href="#"><i class="fa fa-fw fa-instagram"></i></a></li>
+				</nav>
+			</section>
+		</div>
+	</div>
+</article>

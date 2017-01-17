@@ -1,0 +1,19 @@
+<header class="site__header">	
+	<div class="container has-padding-vert">
+		{% include nav.html %}
+	</div>
+
+	{% if page.title == 'Home' %}
+	<aside class="container pitch has-margin-bottom">
+		<div class="columns">
+			<div class="column is-8">
+				<article class="has-padding-vert-small">
+					<p class="is-hxl is-marginless">Crafting Meaningful Connections <br>Through Hand-Made Jewelry</p>
+					<p class="has-margin-top-small small-caps has-text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p class="has-margin-top-small"><a href="#" class="btn btn-border">Learn Our Story</a></p>
+				</article>
+			</div>
+		</div>
+	</aside>
+	{% endif %}
+</header>

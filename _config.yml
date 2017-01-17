@@ -1,0 +1,44 @@
+title: Two Hands Jewelry Design
+url: https://www.twohandsjewelrydesign.com
+email: twohandsjewelrydesign@gmail.com
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, unde.
+baseurl: ""
+url: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+include: ["_pages"]
+sass:
+  sass_dir: assets/sass
+  style: :compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME
+  - node_modules
+  - gulpfile.js
+# collections:
+#   projects:
+#     output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      has_particles: true
+  # -
+  #   scope: 
+  #     path: ""
+  #     type: "projects"
+  #   values:
+  #     layout: project
+  #     permalink: work/:title/
+  #     strength: 0
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
+  

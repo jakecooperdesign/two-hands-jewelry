@@ -1,0 +1,20 @@
+<nav class="nav">
+	<div class="nav-left">
+		<h1 class="site__title is-marginless is-h3">
+			<a href="/">
+				<span class="is-seo-hidden">Two Hands Jewelry</span>
+				{% include logo.html %}
+			</a>
+		</h1>
+	</div>
+	<label class="nav-toggle" for="menu-toggle">
+		<i class="fa fa-bars"></i>
+	</label>
+	<input type="checkbox" name="menu-toggle" id="menu-toggle" class="nav-toggle-input">
+	<div class="nav-right nav-menu">
+		{% assign links = site.data.nav %}
+		{% for link in links %}
+			<a href="{{link.url}}" class="nav-item">{{link.label}}</a>
+		{% endfor %}
+	</div>
+</nav>

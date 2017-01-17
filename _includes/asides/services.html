@@ -1,0 +1,15 @@
+<section class="services container has-padding-vert-large">
+	<h2 class="is-h1 has-margin-bottom is-marginless-top"><span class="is-accented">Services</span></h2>
+	<div class="columns">
+		{% for service in page.services %}
+			<div class="column is-4">
+				<article class="has-padding-right-small">
+					<!-- <p class="is-h2"><i class="fa fa-life-ring"></i></p> -->
+					<h3 class="is-h2">{{service.name}}</h3>
+					<span class="notch has-margin-vert-small"></span>
+					<p>{{service.description}}</p>
+				</article>
+			</div>
+		{% endfor %}
+	</div>
+</section>

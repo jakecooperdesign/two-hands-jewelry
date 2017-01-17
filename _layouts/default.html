@@ -1,0 +1,22 @@
+{% assign slick = layout.has_slick == true || page.has_slick == true %}
+{% assign jquery = layout.has_jquery == true || page.has_jquery == true %}
+
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		{% include header.html %}
+		<main class="site__main">
+			{{ content }}
+		</main>
+		{% include footer.html %}
+	</body>
+	{% if jquery == true %}
+		<script type="text/javascript" src="/assets/js/libs/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/assets/js/libs/jquery-migrate-1.2.1.min.js"></script>
+	{% endif %}
+
+	{% if slick == true %}
+		{% include plugins/slick.html %}
+	{% endif %}
+</html>
